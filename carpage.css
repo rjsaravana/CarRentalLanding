@@ -1,1 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Nunito:wght@600;700;900&family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Nunito:wght@400;500;600;700;800;900&family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mulish:wght@600&family=Nunito:wght@400;500;600;700;800;900&family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope&family=Mulish:wght@600&family=Nunito:wght@600;700;800;900&family=Palanquin+Dark&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav-title {
+    height: 100vh;
+    width: 100%;
+}
+
+/*---------------------------------------------------Navbar---------------------------------------------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-left: 4%;
+    padding-right: 8%;
+    padding-bottom: 13px;
+    background-color: lightgreen;
+}
+
+@media (max-width: 990px) {
+    nav {
+        display: block;
+    }
+}
+
+
+.logo {
+    font-family: 'Palanquin Dark', sans-serif;
+    color: #303030;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    line-height: 43.46px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C2E33;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #2C2E33 !important;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ef0;
+    border-radius: 40px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.register-btn {
+    color: #3B3C98;
+    border: 1px solid #3B3C98;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 17px;
+    letter-spacing: 0.05rem;
+    width: 140px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+
+/*---------------------------------------------------------HOME---------------------------------------------*/
