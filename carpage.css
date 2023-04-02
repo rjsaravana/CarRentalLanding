@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Nunito:wght@400;500;600;700;800;900&family=Palanquin+Dark&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mulish:wght@600&family=Nunito:wght@400;500;600;700;800;900&family=Palanquin+Dark&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope&family=Mulish:wght@600&family=Nunito:wght@600;700;800;900&family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mulish:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope&family=Mulish:wght@400;500;600;700;800;900&family=Nunito:wght@600;700;800;900&family=Palanquin+Dark&display=swap');
+
+:root {
+    --main-bg-color: coral;
+    --main-txt-color: #2C2E33;
+    --main-txt1-color: #747A88;
+    --main-txt2-color: #3B3C98;
+    --main-txt3-color: linear-gradient(147.42deg, #5E60C1 10.75%, #FFD2CC 142.48%);
+}
 
 * {
     padding: 0;
@@ -10,7 +18,6 @@
 }
 
 .nav-title {
-    height: 100vh;
     width: 100%;
 }
 
@@ -20,19 +27,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 18px;
+    padding-top: 35px;
     padding-left: 4%;
     padding-right: 8%;
-    padding-bottom: 13px;
+    padding-bottom: 35px;
     background-color: lightgreen;
 }
-
-@media (max-width: 990px) {
-    nav {
-        display: block;
-    }
-}
-
 
 .logo {
     font-family: 'Palanquin Dark', sans-serif;
@@ -41,7 +41,20 @@ nav {
     font-weight: 400;
     letter-spacing: 6px;
     line-height: 43.46px;
+    margin-left: 3rem;
 }
+
+@media (max-width: 990px) {
+    nav {
+        display: block;
+    }
+
+    .logo {
+        margin-left: 0 !important;
+    }
+}
+
+
 
 nav ul li {
     list-style-type: none;
@@ -51,8 +64,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #2C2E33;
-    font-size: 14px;
+    color: var(--main-txt-color);
+    font-size: 15px;
     font-weight: 500;
     line-height: 16.94px;
     text-transform: capitalize;
@@ -60,7 +73,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2C2E33 !important;
+    color: var(--main-txt-color) !important;
 }
 
 nav ul li a::after {
@@ -97,3 +110,84 @@ nav ul li a:hover::after {
 
 
 /*---------------------------------------------------------HOME---------------------------------------------*/
+
+#home {
+    background: linear-gradient(180deg, rgba(246, 247, 251, 0.5) -6.89%, #DCE0EF 108.33%);
+    ;
+}
+
+.home-content>h4 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 19px;
+    color: var(--main-txt2-color);
+}
+
+.home-content>h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 85px;
+    color: var(--main-txt3-color);
+}
+
+.home-content>p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--main-txt1-color)
+}
+
+/* .home-content-image>.blue-background {
+    width: 100%;
+    height: 50%;
+    margin-top:21rem;
+    z-index: -1;
+    position: relative;
+} */
+
+.home-content-image>.white-car {
+    /* position: absolute ; */
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+/*--------------------------------------------------------Rent Flow------------------------------------------*/
+
+.rentflow-content>h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--main-txt-color);
+}
+
+.rentflow-content>h5 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--main-txt1-color);
+}
+
+.fa-solid {
+    font-size: 25px;
+    color: brown;
+    width: 60px;
+    height: 60px;
+    background: #F2F2F2;
+    border-radius: 16px;
+}
+
+.card-content>h4 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 27px;
+    color: var(--main-txt-color);
+}
+
+.card-content>p {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--main-txt-color);
+}
