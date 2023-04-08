@@ -168,6 +168,10 @@ nav ul li a:hover::after {
 }
 
 .fa-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     font-size: 25px;
     color: brown;
     width: 60px;
@@ -194,6 +198,7 @@ nav ul li a:hover::after {
 
 
 /*-----------------------------------------------------Find by Car----------------------------------------------*/
+
 .wrapper {
     max-width: 1600px;
     position: relative;
