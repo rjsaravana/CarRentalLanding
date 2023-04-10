@@ -113,7 +113,6 @@ nav ul li a:hover::after {
 
 #home {
     background: linear-gradient(180deg, rgba(246, 247, 251, 0.5) -6.89%, #DCE0EF 108.33%);
-    ;
 }
 
 .home-content>h4 {
@@ -167,13 +166,20 @@ nav ul li a:hover::after {
     color: var(--main-txt1-color);
 }
 
+.icon-color {
+    background: linear-gradient(147.42deg, #5E60C1 10.75%, #FFD2CC 142.48%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
 .fa-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     font-size: 25px;
-    color: brown;
     width: 60px;
     height: 60px;
     background: #F2F2F2;
@@ -218,7 +224,7 @@ nav ul li a:hover::after {
     scroll-behavior: auto;
 }
 
-.carousel.dragging img{
+.carousel.dragging img {
     pointer-events: none;
 }
 
@@ -269,4 +275,119 @@ nav ul li a:hover::after {
     .carousel img {
         width: calc(100%);
     }
+}
+
+/*------------------------------------------------------Car Catalogue-----------------------------------------------*/
+
+/*------------------------------------------------------Expert Services----------------------------------------------*/
+
+.white-car2 {
+    width: 100%;
+    height: 100%;
+}
+
+.Special-offers-content {
+    margin-left: 44px !important;
+}
+
+.expert-service-content>h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--main-txt-color);
+}
+
+.expert-service-content>p {
+    width: 22rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-txt1-color);
+}
+
+.fa-icon2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #F2F2F2;
+    border-radius: 16px;
+}
+
+
+/*----------------------------------------------------Testimonials---------------------------------------------*/
+
+.testmonials-content-align {
+    display: flex;
+    flex-direction: row;
+    background: rgba(59, 60, 152, 0.07);
+    border-radius: 48px;
+}
+
+@media (max-width:825px) {
+    .testmonials-content-flex {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .testmonials-content-align {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.testmonials-image {
+    width: 100%;
+    height: 100%;
+}
+
+.testmonials-content {
+    width: 70%;
+}
+
+.testmonials-content>h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-txt-color);
+}
+
+.testmonials-content>h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--main-txt1-color);
+}
+
+.testmonials-content>p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--main-txt-color);
+}
+
+.arrow-icon-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #8E8E8E;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px 5px rgb(173, 166, 166);
+}
+.arrow-icon-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #F2F2F2;
+    background: #F79761;
+    box-shadow: 0px 0px 15px 5px rgb(173, 166, 166);
 }
