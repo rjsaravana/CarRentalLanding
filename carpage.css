@@ -176,6 +176,7 @@ nav ul li a:hover::after {
         margin-top: 15rem;
         height: 42%;
     }
+
     .home-content-image>.white-car {
         width: 82%;
         height: 50%;
@@ -319,6 +320,51 @@ nav ul li a:hover::after {
 
 /*------------------------------------------------------Car Catalogue-----------------------------------------------*/
 
+.car-catalogue-button>.all-car-button {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    width: 119px;
+    height: 43px;
+    padding: 12px 28px;
+    color: #ffffff;
+    background: #F79761;
+    border-radius: 20px;
+    border: none;
+}
+
+.all-car-button1 {
+    width: 180px !important;
+}
+
+.car-catalogue-button>button {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    width: 150px;
+    height: 45px;
+    padding: 12px 28px;
+    color: #B4B4B4;
+    background: #ffffff;
+    border: 2px solid #e7e1e1;
+    border-radius: 20px;
+}
+
+.card{
+    border-radius: 25px;
+    background: brown;
+}
+
+.card-image {
+    position: relative;
+    width: 227px;
+    height: 110px;
+}
+
+/* .car-logos{
+    display: flex;
+    flex-direction: row;
+} */
 /*------------------------------------------------------Expert Services----------------------------------------------*/
 
 .white-car2 {
