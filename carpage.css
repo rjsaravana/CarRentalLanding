@@ -19,11 +19,15 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
 }
 
 .nav-title {
     width: 100%;
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+    top: 0;
 }
 
 /*---------------------------------------------------Navbar---------------------------------------------*/
@@ -32,10 +36,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 35px;
+    padding-top: 28px;
     padding-left: 4%;
     padding-right: 8%;
-    padding-bottom: 35px;
+    padding-bottom: 28px;
     background-color: lightgreen;
 }
 
@@ -118,6 +122,7 @@ nav ul li a:hover::after {
 
 #home {
     background: linear-gradient(180deg, rgba(246, 247, 251, 0.5) -6.89%, #DCE0EF 108.33%);
+    margin-top: 130px;
 }
 
 .home-content>h4 {
@@ -140,19 +145,49 @@ nav ul li a:hover::after {
     color: var(--main-txt1-color)
 }
 
-/* .home-content-image>.blue-background {
-    width: 100%;
-    height: 50%;
-    margin-top:21rem;
-    z-index: -1;
-    position: relative;
-} */
+.home-content-image>.blue-background {
+    width: 38rem;
+    /* height: 50%; */
+    height: 43%;
+    margin-top: 21rem;
+    /* z-index: -1; */
+    /* position: relative; */
+}
 
 .home-content-image>.white-car {
-    /* position: absolute ; */
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 45%;
+    height: 90%;
     z-index: 1;
+}
+
+@media (max-width:825px) {
+
+    .home-content-image>.white-car {
+        width: 75%;
+        height: 55%;
+    }
+}
+
+@media (max-width:430px) {
+
+    .home-content-image>.blue-background {
+        width: 21.2rem;
+        margin-top: 15rem;
+        height: 42%;
+    }
+    .home-content-image>.white-car {
+        width: 82%;
+        height: 50%;
+    }
+}
+
+@media (max-width:380px) {
+
+    .home-content-image>.blue-background {
+        width: 19.2rem;
+        margin-top: 11rem;
+    }
 }
 
 
@@ -287,9 +322,52 @@ nav ul li a:hover::after {
 /*------------------------------------------------------Expert Services----------------------------------------------*/
 
 .white-car2 {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    z-index: 10;
+    margin-left: 40px;
+    margin-top: -30px;
 }
+
+.blue2 {
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    width: 95%;
+    height: 65%;
+    margin-top: 10rem;
+}
+
+@media (max-width:825px) {
+
+    .blue2 {
+        width: 63%;
+        height: 70%;
+        margin-top: 6rem;
+    }
+
+    .white-car2 {
+        width: 65%;
+        height: 35%;
+        z-index: 10;
+        margin-top: -25px;
+        margin-left: 70px;
+    }
+}
+
+@media (max-width:380px) {
+    .white-car2 {
+        width: 62%;
+        height: 36%;
+        z-index: 10;
+        margin-top: 18px;
+        margin-left: 51px;
+    }
+}
+
 
 .Special-offers-content {
     margin-left: 44px !important;
@@ -401,6 +479,12 @@ nav ul li a:hover::after {
 
 /*-----------------------------------------------------Special Offers---------------------------------------------*/
 
+.special-offers-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .special-offers-content>h2 {
     font-size: 40px;
     font-weight: 900;
@@ -429,11 +513,35 @@ nav ul li a:hover::after {
 
 .Special-blue-background {
     width: 55%;
-    height: 100%;
+    height: fit-content;
     background: #3B3C98;
     border-radius: 15px;
     position: relative;
+    margin-left: 11rem;
 }
+
+@media (max-width:825px) {
+    .Special-blue-background {
+        margin-left: 11.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .Special-blue-background {
+        margin-left: 11rem;
+    }
+}
+
+@media (max-width:420px) {
+    .special-offer-image {
+        margin-top: -7rem !important;
+    }
+
+    .Special-blue-background {
+        margin-left: 5.7rem !important;
+    }
+}
+
 
 .special-input-box>input {
     width: 200px;
@@ -442,7 +550,7 @@ nav ul li a:hover::after {
     font-size: 12px;
     padding-left: 10px;
     line-height: 24px;
-    color: rgba(59, 60, 152, 0.5);
+    /* color: rgba(59, 60, 152, 0.5); */
     border-radius: 10px;
     border: none;
 }
@@ -460,9 +568,9 @@ nav ul li a:hover::after {
 }
 
 .special-offer-image {
-    width: 35%;
+    width: 65%;
     height: 70%;
-    position: absolute;
+    margin-top: -13rem;
 }
 
 /*---------------------------------------------------------Menu----------------------------------------------------*/
@@ -483,16 +591,18 @@ nav ul li a:hover::after {
     line-height: 24px;
 }
 
-.menu-text>h4{
+.menu-text>h4 {
     font-weight: 700;
     font-size: 20px;
     color: var(--main-txt-color);
+    line-height: 2rem;
 }
 
 .menu-text>h5 {
     font-weight: 400;
     font-size: 20px;
     color: var(--main-txt-color);
+    line-height: 2rem;
 }
 
 @media (max-width:825px) {
@@ -507,7 +617,7 @@ nav ul li a:hover::after {
 @media (max-width:430px) {
 
     .menu-text1,
-    .carent-text{
+    .carent-text {
         text-align: center;
         justify-content: center;
     }
@@ -515,7 +625,7 @@ nav ul li a:hover::after {
 
 @media (max-width:430px) {
 
-    .menu-text{
+    .menu-text {
         margin-top: 30px !important;
     }
 }
