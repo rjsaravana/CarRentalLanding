@@ -40,7 +40,7 @@ nav {
     padding-left: 4%;
     padding-right: 8%;
     padding-bottom: 28px;
-    background-color: lightgreen;
+    background-color: #ffffff;
 }
 
 .logo {
@@ -92,7 +92,7 @@ nav ul li a::after {
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #ef0;
+    background: var(--main-txt2-color);
     border-radius: 40px;
     transform: scaleX(0);
     transform-origin: right;
@@ -105,8 +105,8 @@ nav ul li a:hover::after {
 }
 
 .register-btn {
-    color: #3B3C98;
-    border: 1px solid #3B3C98;
+    color: var(--main-txt2-color);
+    border: 1px solid var(--main-txt2-color);
     font-size: 14px;
     font-weight: 900;
     line-height: 17px;
@@ -169,6 +169,13 @@ nav ul li a:hover::after {
     }
 }
 
+@media (max-width:770px) {
+
+    .home-content-image>.white-car {
+        width: 79%;
+    }
+}
+
 @media (max-width:430px) {
 
     .home-content-image>.blue-background {
@@ -185,14 +192,27 @@ nav ul li a:hover::after {
 
 @media (max-width:380px) {
 
+    .home-content-image>.white-car {
+        width: 71%;
+        height: 50%;
+    }
+
     .home-content-image>.blue-background {
-        width: 19.2rem;
+        width: 16.6rem;
         margin-top: 11rem;
     }
 }
 
 
 /*--------------------------------------------------------Rent Flow------------------------------------------*/
+
+.rent-flow-svg {
+    position: relative;
+}
+
+/* .cuve-svg{
+    top: 10;
+} */
 
 .rentflow-content>h2 {
     font-size: 40px;
@@ -350,21 +370,94 @@ nav ul li a:hover::after {
     border-radius: 20px;
 }
 
-.card{
+.card {
     border-radius: 25px;
     background: brown;
 }
 
-.card-image {
+.car-card-image {
     position: relative;
     width: 227px;
     height: 110px;
 }
 
-/* .car-logos{
+.car-name-text>h4 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--main-txt-color);
+}
+
+.car-logos {
     display: flex;
     flex-direction: row;
-} */
+    text-align: center;
+}
+
+.car-steering-icon>h5,
+.car-seat-icon>h5 {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+}
+
+.car-pet-icon>h5 {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+}
+
+.car-pet-icon>i {
+    font-size: 19px;
+}
+
+.car-pet-icon {
+    margin-top: 1.5px;
+}
+
+.car-price>h5 {
+    font-size: 32px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--main-txt-color);
+}
+
+.doller-text {
+    font-size: 13px;
+    vertical-align: super;
+}
+
+.day-text {
+    font-size: 13px;
+}
+
+.card-background {
+    border-radius: 24px !important;
+    background: #F2F2F2 !important;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    height: 600px;
+    width: 4000px;
+    margin: 10px auto;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.slider {
+    margin: 15px;
+}
+
+.arrow {
+    position: absolute;
+    top: 170px;
+    right: -20px;
+    color: var(--main-txt2-color);
+    font-size: 60px;
+    cursor: pointer;
+}
+
 /*------------------------------------------------------Expert Services----------------------------------------------*/
 
 .white-car2 {
