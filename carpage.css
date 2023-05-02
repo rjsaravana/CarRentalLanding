@@ -146,7 +146,7 @@ nav ul li a:hover::after {
 }
 
 .home-content-image>.blue-background {
-    width: 38rem;
+    width: 42.8rem;
     /* height: 50%; */
     height: 43%;
     margin-top: 21rem;
@@ -164,7 +164,7 @@ nav ul li a:hover::after {
 @media (max-width:825px) {
 
     .home-content-image>.white-car {
-        width: 75%;
+        width: 84%;
         height: 55%;
     }
 }
@@ -315,12 +315,18 @@ nav ul li a:hover::after {
 }
 
 .carousel img {
-    width: calc(69%/ 3);
+    width: calc(70%/ 3);
     height: 209px;
     object-fit: cover;
     margin-left: 25px;
     border-radius: 24px;
 }
+
+.swiper {
+    width: 600px;
+    height: 350px;
+    /* scroll-behavior: smooth; */
+  }
 
 .carousel img:first-child {
     margin-left: 0px;
@@ -334,7 +340,7 @@ nav ul li a:hover::after {
 
 @media (max-width:550px) {
     .carousel img {
-        width: calc(100%);
+        width: calc(95%);
     }
 }
 
@@ -435,7 +441,7 @@ nav ul li a:hover::after {
     background: #F2F2F2 !important;
 }
 
-.container {
+/* .container {
     display: flex;
     justify-content: left;
     height: 600px;
@@ -443,7 +449,7 @@ nav ul li a:hover::after {
     margin: 10px auto;
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
-}
+} */
 
 .slider {
     margin: 15px;
@@ -646,6 +652,11 @@ nav ul li a:hover::after {
     border-radius: 16px;
 }
 
+.special-offers-content>button:hover {
+    border: none;
+    background: var(--main-bg-color);
+}
+
 .mail-image {
     width: 80px;
 }
@@ -656,7 +667,7 @@ nav ul li a:hover::after {
     background: #3B3C98;
     border-radius: 15px;
     position: relative;
-    margin-left: 11rem;
+    margin-left: 12.4rem;
 }
 
 @media (max-width:825px) {
@@ -780,4 +791,8 @@ nav ul li a:hover::after {
     color: #ffffff;
     background: var(--main-txt2-color);
     border-radius: 50%;
+}
+
+.contact-social-icon:hover {
+    background: var(--main-bg-color);
 }
