@@ -164,8 +164,13 @@ nav ul li a:hover::after {
 @media (max-width:825px) {
 
     .home-content-image>.white-car {
-        width: 84%;
+        width: 86%;
         height: 55%;
+    }
+    .home-content-image>.blue-background {
+        width: 44rem;
+        height: 45%;
+        margin-top: 21rem;
     }
 }
 
@@ -286,8 +291,8 @@ nav ul li a:hover::after {
 }
 
 .carousel.dragging img {
-    pointer-events: none;
-}
+        pointer-events: none;
+    }
 
 .wrapper i {
     top: 50%;
@@ -322,12 +327,6 @@ nav ul li a:hover::after {
     border-radius: 24px;
 }
 
-.swiper {
-    width: 600px;
-    height: 350px;
-    /* scroll-behavior: smooth; */
-  }
-
 .carousel img:first-child {
     margin-left: 0px;
 }
@@ -340,7 +339,7 @@ nav ul li a:hover::after {
 
 @media (max-width:550px) {
     .carousel img {
-        width: calc(95%);
+        width: calc(100%);
     }
 }
 
@@ -378,7 +377,6 @@ nav ul li a:hover::after {
 
 .card {
     border-radius: 25px;
-    background: brown;
 }
 
 .car-card-image {
@@ -464,6 +462,32 @@ nav ul li a:hover::after {
     cursor: pointer;
 }
 
+/* .swiper {
+    width: 600px;
+    height: 380px;
+  } */
+
+  html {
+    scroll-behavior: smooth;
+  }
+  .swiper-container {
+    width: 100%;
+  }
+  .swiper-slide {
+     /* background-color: rgba(0,255,0,0.1); */
+     padding: 10px;
+     width: 20%!important;
+  }
+  /* .swiper-slide-active {
+    background-color: red;
+  } */
+  
+  .swiper-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
 /*------------------------------------------------------Expert Services----------------------------------------------*/
 
 .white-car2 {
@@ -473,8 +497,8 @@ nav ul li a:hover::after {
     height: 85%;
     position: absolute;
     z-index: 10;
-    margin-left: 40px;
-    margin-top: -30px;
+    margin-left: 60px;
+    margin-top: -70px;
 }
 
 .blue2 {

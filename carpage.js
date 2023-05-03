@@ -54,18 +54,17 @@ carousel.addEventListener("touchend", dragStop);
 
 
 const arrows = document.querySelectorAll(".arrow");
-const container= document.querySelectorAll(".container");
+const container = document.querySelectorAll(".container");
 
 arrows.forEach((arrow, i) => {
     const ItemNo = container[i].querySelectorAll("img").length;
     let clickitem = 0;
     arrow.addEventListener("click", () => {
         clickitem++;
-        if(ItemNo - (5 + clickitem) >= 0){
-            container[i].style.transform = `translateX(${
-                container[i].computedStyleMap().get("transform")[0].x.value
+        if (ItemNo - (5 + clickitem) >= 0) {
+            container[i].style.transform = `translateX(${container[i].computedStyleMap().get("transform")[0].x.value
                 - 455}px)`;
-        }else{
+        } else {
             container[i].style.transform = "translateX(0)";
             clickitem = 0;
         }
@@ -74,24 +73,37 @@ arrows.forEach((arrow, i) => {
 
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
+    // slidesPerView: "auto",
+    // freeMode: true,
+    // slideToClickedSlide: true,
+    // spaceBetween: 10,
+    // mousewheel: true
+
+    // // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+
     // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+});
+
+// const swiper = new Swiper(".swiper-container", {
+//     slidesPerView: "auto",
+//     freeMode: true,
+//     slideToClickedSlide: true,
+//     spaceBetween: 10,
+//     mousewheel: true
+//   });
