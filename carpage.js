@@ -76,11 +76,9 @@ arrows.forEach((arrow, i) => {
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
-    // slidesPerView: "auto",
-    // freeMode: true,
-    // slideToClickedSlide: true,
-    // spaceBetween: 10,
+    loop: false,
+    slidesPerView: "auto",
+    spaceBetween: 10,
     // mousewheel: true
 
     // // If we need pagination
@@ -98,12 +96,18 @@ const swiper = new Swiper('.swiper-container', {
     // scrollbar: {
     //   el: '.swiper-scrollbar',
     // },
+    // breakpoints: {
+    //     640:{
+    //         slidesPerView: 2,
+    //         spaceBetween:10,
+    //     },
+    //     820:{
+    //         slidesPerView: 1,
+    //         spaceBetween:120,
+    //     },
+    //     1024:{
+    //         slidesPerView:8,
+    //         spaceBetween:20,
+    //     }
+    // },
 });
-
-// const swiper = new Swiper(".swiper-container", {
-//     slidesPerView: "auto",
-//     freeMode: true,
-//     slideToClickedSlide: true,
-//     spaceBetween: 10,
-//     mousewheel: true
-//   });
