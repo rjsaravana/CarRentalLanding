@@ -40,7 +40,7 @@ nav {
     padding-left: 4%;
     padding-right: 8%;
     padding-bottom: 28px;
-    background-color: #ffffff;
+    background-color: #F2F2F2;
 }
 
 .logo {
@@ -358,7 +358,7 @@ nav ul li a:hover::after {
     border: none;
 }
 
-.all-car-button1 {
+.all-car-btn {
     width: 180px !important;
 }
 
@@ -439,33 +439,6 @@ nav ul li a:hover::after {
     background: #F2F2F2 !important;
 }
 
-/* .container {
-    display: flex;
-    justify-content: left;
-    height: 600px;
-    width: 4000px;
-    margin: 10px auto;
-    transform: translateX(0);
-    transition: all 0.5s ease-in-out;
-} */
-
-.slider {
-    margin: 15px;
-}
-
-.arrow {
-    position: absolute;
-    top: 170px;
-    right: -20px;
-    color: var(--main-txt2-color);
-    font-size: 60px;
-    cursor: pointer;
-}
-
-/* .swiper {
-    width: 600px;
-    height: 380px;
-  } */
 
   html {
     scroll-behavior: smooth;
@@ -476,7 +449,6 @@ nav ul li a:hover::after {
   }
 
   .swiper-slide {
-    width: 100%;    
     padding: 10px;
     width: 20%!important;
   }
@@ -487,6 +459,24 @@ nav ul li a:hover::after {
     padding: 0;
   }
 
+  @media (max-width:900px) {
+    .swiper-slide {
+        width: 37%!important;
+    }
+}
+
+@media (max-width:420px) {
+    .swiper-slide{
+        width: 90%!important;
+        margin-left: 40px !important; 
+    }
+
+    /* .swiper-container {
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+        overflow-x: hidden;
+      } */
+}
 /*------------------------------------------------------Expert Services----------------------------------------------*/
 
 .white-car2 {
