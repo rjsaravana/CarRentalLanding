@@ -77,7 +77,7 @@ const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 4.8,
+    slidesPerView: 4,
     spaceBetween: 10,
     // mousewheel: true
 
@@ -97,14 +97,14 @@ const swiper = new Swiper('.swiper-container', {
     //   el: '.swiper-scrollbar',
     // },
     breakpoints: {
-        0:{
+        0: {
             slidesPerView: 1,
         },
-        520:{
+        520: {
             slidesPerView: 2,
         },
-        950:{
-            slidesPerView:3,
+        950: {
+            slidesPerView: 3,
         }
     },
 });

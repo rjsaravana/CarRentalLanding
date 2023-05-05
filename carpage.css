@@ -471,6 +471,9 @@ nav ul li a:hover::after {
         margin-left: 40px !important; 
     }
 
+    .top-rate-btn, .all-car-btn{
+        margin-top: 12px;
+    }
     /* .swiper-container {
         margin-left: 40px !important;
         margin-right: 40px !important;
