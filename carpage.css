@@ -187,17 +187,17 @@ nav ul li a:hover::after {
     }
 }
 
-@media (max-width:430px) {
+@media (max-width:420px) {
 
     .home-content-image>.blue-background {
-        width: 21.2rem;
+        width: 19rem;
         margin-top: 15rem;
-        height: 42%;
+        height: 34%;
     }
 
     .home-content-image>.white-car {
-        width: 82%;
-        height: 50%;
+        width: 73%;
+        height: 45%;
     }
     .home-content>h1{
         font-size: 40px;
@@ -728,6 +728,10 @@ html {
     }
     .special-offers-content>h2 {
         margin-top: 45px;
+    }
+
+    .special-off-width>p {
+        width: 17rem !important;
     }
 }
 
