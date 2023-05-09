@@ -167,10 +167,16 @@ nav ul li a:hover::after {
         width: 86%;
         height: 55%;
     }
+
     .home-content-image>.blue-background {
         width: 44rem;
         height: 45%;
         margin-top: 21rem;
+    }
+    .home-content>h1{
+        font-size: 45px;
+        line-height: 65px;
+
     }
 }
 
@@ -192,6 +198,11 @@ nav ul li a:hover::after {
     .home-content-image>.white-car {
         width: 82%;
         height: 50%;
+    }
+    .home-content>h1{
+        font-size: 40px;
+        line-height: 55px;
+
     }
 }
 
@@ -291,8 +302,8 @@ nav ul li a:hover::after {
 }
 
 .carousel.dragging img {
-        pointer-events: none;
-    }
+    pointer-events: none;
+}
 
 .wrapper i {
     top: 50%;
@@ -343,6 +354,7 @@ nav ul li a:hover::after {
     }
 }
 
+
 /*------------------------------------------------------Car Catalogue-----------------------------------------------*/
 
 .car-catalogue-button>.all-car-button {
@@ -379,7 +391,7 @@ nav ul li a:hover::after {
     border-radius: 25px;
 }
 
-.car-card-image{
+.car-card-image {
     position: relative;
     width: 227px;
     height: 120px;
@@ -440,46 +452,51 @@ nav ul li a:hover::after {
 }
 
 
-  html {
+html {
     scroll-behavior: smooth;
-  }
-  .swiper-container {
+}
+
+.swiper-container {
     width: 100%;
     overflow-x: hidden;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     padding: 10px;
-    width: 20%!important;
-  }
-  
-  .swiper-container ul {
+    width: 20% !important;
+}
+
+.swiper-container ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  @media (max-width:900px) {
+
+@media (max-width:900px) {
     .swiper-slide {
-        width: 37%!important;
+        width: 37% !important;
     }
 }
 
 @media (max-width:420px) {
-    .swiper-slide{
-        width: 90%!important;
-        margin-left: 40px !important; 
+    .swiper-slide {
+        width: 90% !important;
+        margin-left: 40px !important;
     }
 
-    .top-rate-btn, .all-car-btn{
+    .top-rate-btn,
+    .all-car-btn {
         margin-top: 12px;
     }
+
     /* .swiper-container {
         margin-left: 40px !important;
         margin-right: 40px !important;
         overflow-x: hidden;
       } */
 }
+
 /*------------------------------------------------------Expert Services----------------------------------------------*/
 
 .white-car2 {
@@ -690,6 +707,9 @@ nav ul li a:hover::after {
     .Special-blue-background {
         margin-left: 11.5rem;
     }
+    .special-offers-content>h2 {
+        margin-top: 55px;
+    }
 }
 
 @media (max-width:768px) {
@@ -700,11 +720,14 @@ nav ul li a:hover::after {
 
 @media (max-width:420px) {
     .special-offer-image {
-        margin-top: -7rem !important;
+        margin-top: -6rem !important;
     }
 
     .Special-blue-background {
         margin-left: 5.7rem !important;
+    }
+    .special-offers-content>h2 {
+        margin-top: 45px;
     }
 }
 
@@ -731,6 +754,13 @@ nav ul li a:hover::after {
     background: #F79761;
     border-radius: 10px;
     border: none;
+}
+
+
+@media (max-width:420px) {
+    .special-input-box>button {
+        margin-top: 8px;
+    }
 }
 
 .special-offer-image {

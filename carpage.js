@@ -77,7 +77,7 @@ const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 4,
+    slidesPerView: 4.8,
     spaceBetween: 10,
     // mousewheel: true
 
